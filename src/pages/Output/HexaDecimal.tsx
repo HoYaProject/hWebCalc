@@ -1,7 +1,7 @@
 import React from "react";
 
 interface IHexaDecimalProps {
-  result: number;
+  result: string;
 }
 
 const HexaDecimal: React.FC<IHexaDecimalProps> = ({ result }) => {
