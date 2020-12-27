@@ -14,8 +14,11 @@ const BinaryPresenter: React.FC<IBinaryPresenterProps> = ({ label, value }) => {
       <div></div>
       <div></div>
       <div></div>
-      {value.map((val) => (
-        <div className="text-xl text-blue-800 flex justify-center items-center">
+      {value.map((val, i) => (
+        <div
+          className="text-xl text-blue-800 flex justify-center items-center"
+          key={i}
+        >
           {val}
         </div>
       ))}

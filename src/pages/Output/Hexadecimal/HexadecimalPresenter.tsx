@@ -9,8 +9,11 @@ const HexadecimalPresenter: React.FC<IHexadecimalPresenterProps> = ({
 }) => {
   return (
     <div className="grid grid-cols-4">
-      {value.map((val) => (
-        <div className="mt-4 text-xl text-blue-800 flex justify-center items-center">
+      {value.map((val, i) => (
+        <div
+          className="mt-4 text-xl text-blue-800 flex justify-center items-center"
+          key={i}
+        >
           {val}
         </div>
       ))}

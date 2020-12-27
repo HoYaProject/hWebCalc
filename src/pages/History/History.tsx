@@ -14,8 +14,8 @@ export const History: React.FC = () => {
         History List
       </div>
       <div className="flex flex-col items-center divide-y divide-blue-500">
-        {objHistory.map((obj) => (
-          <HistoryItem history={obj} />
+        {objHistory.map((obj, i) => (
+          <HistoryItem history={obj} key={i} />
         ))}
       </div>
     </div>
