@@ -8,7 +8,6 @@ import HexaDecimal from "./HexaDecimal";
 export const Output: React.FC = () => {
   const expr = "3+2=";
   const result = 5;
-  const binNum = rc.convertDecimalToBinary(result);
   const hexNum = rc.convertDecimalToHexadecimal(result);
 
   return (
@@ -16,7 +15,7 @@ export const Output: React.FC = () => {
       <div className="m-8 rounded-xl p-4 bg-blue-200 flex flex-col items-end font-mono">
         <Expression expr={expr} />
         <Decimal result={result} />
-        <Binary result={binNum} />
+        <Binary result={result} />
         <HexaDecimal result={hexNum} />
       </div>
     </div>
