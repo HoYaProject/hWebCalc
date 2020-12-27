@@ -4,8 +4,11 @@ import Decimal from "./Decimal";
 import Expression from "./Expression";
 import Hexadecimal from "./Hexadecimal";
 
-export const Output: React.FC = () => {
-  const expr = "3+2=";
+interface IOutputProps {
+  expr: string;
+}
+
+export const Output: React.FC<IOutputProps> = ({ expr }) => {
   const result = 5;
 
   return (
