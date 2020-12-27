@@ -1,14 +1,12 @@
 import React from "react";
-import { radixConverter as rc } from "../../components/radixConverter";
 import Binary from "./Binary";
 import Decimal from "./Decimal";
 import Expression from "./Expression";
-import HexaDecimal from "./HexaDecimal";
+import Hexadecimal from "./Hexadecimal";
 
 export const Output: React.FC = () => {
   const expr = "3+2=";
   const result = 5;
-  const hexNum = rc.convertDecimalToHexadecimal(result);
 
   return (
     <div className="col-span-3 row-span-2 bg-blue-50">
@@ -16,7 +14,7 @@ export const Output: React.FC = () => {
         <Expression expr={expr} />
         <Decimal result={result} />
         <Binary result={result} />
-        <HexaDecimal result={hexNum} />
+        <Hexadecimal result={result} />
       </div>
     </div>
   );
